@@ -1,0 +1,325 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+  
+.cover {
+    height: 600px;
+    width: 339px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/cover.jpg");
+    overflow: hidden;
+}
+
+
+
+.br {
+    height: 600px;
+    width: 339px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/title.png");
+    opacity: 0;
+    animation: fadeIn 1.7s ease-in-out forwards;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.overline{
+    position: absolute;
+    left: 14%;
+    top: 3.5%;
+    border-bottom: 2px solid;
+    width: 243px;
+    color: rgb(118, 155, 190);
+    opacity: 0;
+    animation: fadeIn 1.7s ease-in-out forwards;
+    animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.title {
+    position: relative;
+    margin-top: 27px;
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Bourgeois W00 Bold Italic;
+    color: rgb(118, 155, 190);
+    opacity: 0;
+    animation: fadeIn 1.7s ease-in-out forwards;
+    animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.underline{
+    position: absolute;
+    left: 14%;
+    top: 13.5%;
+    border-bottom: 2px solid;
+    width: 243px;
+    color: rgb(118, 155, 190);
+    opacity: 0;
+    animation: fadeIn 1.7s ease-in-out forwards;
+    animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.subtitle {
+    position: relative;
+    text-align: center;
+    margin-top: -8px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -1px;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1.7s ease-in-out forwards;
+    animation-delay: .8s;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.quote {
+    position: relative;
+    text-align: center;
+    margin-top: -8px;
+    font-family: "Oswald", sans-serif;
+    top: -47px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -1px;
+    opacity: 0;
+    z-index: 1;
+    
+}
+
+
+
+
+
+.author {
+    position: relative;
+    margin-top: 610px;
+    font-size: 47px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Bourgeois W00 Bold;
+    color: white;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 1.7s ease-in-out forwards;
+    animation-delay: .8s;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.author:hover{
+    color: rgb(216, 3, 3);
+    text-shadow: 1px 1px 10px red, 1px 1px 10px #ccc;
+
+}
+
+.cover:hover .author{
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+    0%{color: white;}
+    50%{color:red;}
+    100%{color: white;}
+}
+
+.drop{
+    position: absolute;
+    border-left: 1.5px solid;
+    height: 48px;
+    color: rgb(231, 246, 252);
+    opacity: 65%;
+    animation: fall .72s linear infinite;
+    
+
+}
+
+
+.one{
+    left: 20px;
+    top: 2px;
+    animation-delay: .25s;
+}
+
+.two{
+    left: 120px;
+    top: 87px;
+    animation-delay: .15s;
+}
+
+.three{
+    left: 210px;
+    top: 45px;
+    animation-delay: .4s;
+
+}
+
+.four{
+    left: 298px;
+    top: 150px;
+}
+
+.five{
+    left: 10px;
+    top: 59px;
+    animation-delay: .22s;
+}
+
+.six{
+    left: 300px;
+    top: 99px;
+    animation-delay: .437s;
+}
+
+.seven{
+    left: 320px;
+    top: 26px;
+    animation-delay: .62s;
+}
+
+.eight{
+    left: 67px;
+    top: 77px;
+}
+
+.nine{
+    left: 167px;
+    top: 15px;
+    animation-delay: .38s;
+}
+
+.ten{
+    left: 281px;
+    top: 31px;
+    animation-delay: .08s;
+}
+
+.eleven{
+    left: 187px;
+    top: 49px;
+}
+
+.twelve{
+    left: 221px;
+    top: 50px;
+    animation-delay: .5s;
+}
+
+.thirteen{
+    left: 330px;
+    top: 2px;
+    animation-delay: .31s;
+}
+
+.fourteen{
+    left: 88px;
+    top: 18px;
+    animation-delay: .1s;
+}
+
+.fifteen{
+    left: 101px;
+    top: 72px;
+    animation-delay: .5s;
+}
+
+.sixteen{
+    left: 42px;
+    top: 66px;
+    animation-delay: .17s;
+}
+
+.seventeen{
+    left: 262px;
+    top: 33px;
+    animation-delay: .36s;
+}
+
+.eighteen{
+    left: 234px;
+    top: 19px;
+    animation-delay: .5s;
+}
+
+.nineteen{
+    left: 57px;
+    top: 25px;
+    animation-delay: .7s;
+}
+
+.twenty{
+    left: 198px;
+    top: 1px;
+    animation-delay: .2s;
+}
+
+.twentyone{
+    left: 72px;
+    top: 29px;
+    animation-delay: .4s;
+}
+
+.twentytwo{
+    left: 335px;
+    top: 1px;
+    animation-delay: .13s;
+}
+
+.twentythree{
+    left: 69px;
+    top: 45px;
+}
+
+@keyframes fall {
+    to {margin-top:700px;}
+}
